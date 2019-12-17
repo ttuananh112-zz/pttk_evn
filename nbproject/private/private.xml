@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/view/GiaoDienNhapChiSo.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/controller/HoDungDienDAO.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/controller/ThongTinDongHoDAO.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/controller/BangGiaDAO.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/view/GiaoDienHoaDon.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/controller/DongHoDAO.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/controller/KhachHangDAO.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/controller/LoaiHopDongDAO.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/controller/DatabaseConnection.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/view/GiaoDienChinh.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/model/HoaDon.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/model/BangGia.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/controller/HoaDonDAO.java</file>
+            <file>file:/home/tuananh/NetBeansProjects/evn/src/model/LoaiHopDong.java</file>
+        </group>
+    </open-files>
+</project-private>
