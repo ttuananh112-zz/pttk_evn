@@ -129,7 +129,7 @@ public class HoaDon {
         for(int i=1; i<iter; i++){
             total += (level[i]-level[i-1]) * listBangGia.get(i-1).getMucGia();
         }
-        total += soDien_left * listBangGia.get(iter).getMucGia();
+        total += soDien_left * listBangGia.get(iter-1).getMucGia();
         
         return total;
     }
