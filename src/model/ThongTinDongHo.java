@@ -9,7 +9,7 @@ package model;
  *
  * @author tuananh
  */
-public class ThongTinDongHo {
+public class ThongTinDongHo implements Comparable{
     private int maThongTinDongHo;
     private DongHo dongHo;
     private long chiSoCu;
@@ -64,5 +64,21 @@ public class ThongTinDongHo {
         this.ngay = ngay;
     }
     
+    @Override
+    public int compareTo(Object o) {
+        ThongTinDongHo ttdh = (ThongTinDongHo)(o);
+
+        if (this.dongHo.getMaDongHo() == ttdh.getDongHo().getMaDongHo() &&
+                this.getChiSoCu() == ttdh.getChiSoCu() &&
+                this.getChiSoMoi() == ttdh.getChiSoMoi() &&
+                this.getNgay().equals(ttdh.getNgay())){
+            return 0;
+        }
+        return -1;
+    }
     
+    @Override
+    public String toString(){
+        return dongHo.getMaDongHo() + " " + chiSoCu + " " + chiSoMoi + " " + ngay;
+    }
 }

@@ -22,7 +22,7 @@ public class GiaoDienChinh extends javax.swing.JFrame {
     Connection connection;
 
     // fixed NhanVien
-    NhanVien nhanVien = new NhanVien(2, "Nguyen Van A", "1231231231", "Ha Noi", "3213213213", "vana@gmail.com");;
+    NhanVien nhanVien = new NhanVien(2, "Nguyen Van A", "1231231231", "Ha Noi", "3213213213", "vana@gmail.com");
 
     /**
      * Creates new form GiaoDienChinh
@@ -64,8 +64,6 @@ public class GiaoDienChinh extends javax.swing.JFrame {
     private void initComponents() {
 
         btnNhapChiSo = new javax.swing.JButton();
-        btnCapNhatHoaDon = new javax.swing.JButton();
-        btnThongKe = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -76,42 +74,21 @@ public class GiaoDienChinh extends javax.swing.JFrame {
             }
         });
 
-        btnCapNhatHoaDon.setText("Cập nhật hóa đơn hàng tháng");
-        btnCapNhatHoaDon.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCapNhatHoaDonActionPerformed(evt);
-            }
-        });
-
-        btnThongKe.setText("Thống kê chỉ số đồng hồ hàng tháng");
-        btnThongKe.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnThongKeActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(94, 94, 94)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnCapNhatHoaDon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnNhapChiSo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnThongKe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(94, 94, 94))
+                .addContainerGap(94, Short.MAX_VALUE)
+                .addComponent(btnNhapChiSo, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
+                .addContainerGap(94, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addContainerGap(138, Short.MAX_VALUE)
                 .addComponent(btnNhapChiSo)
-                .addGap(18, 18, 18)
-                .addComponent(btnCapNhatHoaDon)
-                .addGap(18, 18, 18)
-                .addComponent(btnThongKe)
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
 
         pack();
@@ -120,14 +97,6 @@ public class GiaoDienChinh extends javax.swing.JFrame {
     private void btnNhapChiSoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNhapChiSoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnNhapChiSoActionPerformed
-
-    private void btnCapNhatHoaDonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapNhatHoaDonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCapNhatHoaDonActionPerformed
-
-    private void btnThongKeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThongKeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnThongKeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,8 +137,6 @@ public class GiaoDienChinh extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCapNhatHoaDon;
     private javax.swing.JButton btnNhapChiSo;
-    private javax.swing.JButton btnThongKe;
     // End of variables declaration//GEN-END:variables
 }

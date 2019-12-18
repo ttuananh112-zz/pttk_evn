@@ -76,7 +76,15 @@ public class GiaoDienNhapChiSo extends javax.swing.JFrame {
         DongHo dongHo;
         HoDungDien hoDungDien;
         ThongTinDongHo thongTinDongHo;
-
+        
+        // check Date
+        if(tfDate.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Chọn ngày nhập chỉ số", 
+                "Cảnh báo", JOptionPane.PLAIN_MESSAGE);
+            return;
+        }
+        
+        //check maDongHo
         try {
             maDongHo = Integer.valueOf(tfMaDongHo.getText());
 
@@ -92,6 +100,7 @@ public class GiaoDienNhapChiSo extends javax.swing.JFrame {
             return;
         }
 
+        //check chiSoMoi
         try {
             chiSoMoi = Long.valueOf(tfChiSoDongHo.getText());
 

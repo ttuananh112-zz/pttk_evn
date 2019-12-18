@@ -42,7 +42,7 @@ public class ThongTinDongHoDAO {
 
             
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         return false;
     }
@@ -70,7 +70,7 @@ public class ThongTinDongHoDAO {
             
             
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         return thongTinDongHo;
     }
