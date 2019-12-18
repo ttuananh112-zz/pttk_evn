@@ -37,9 +37,9 @@ public class GiaoDienHoaDon extends javax.swing.JFrame {
         lblChiSoCu.setText(String.valueOf(thongTinDongHo.getChiSoCu()));
         lblChiSoMoi.setText(String.valueOf(thongTinDongHo.getChiSoMoi()));
         lblTongSoDien.setText(String.valueOf(hoaDon.getTongSoDienSuDung()));
-        lblThanhTien.setText(String.valueOf(hoaDon.getTienChuaVAT()));
-        lblThueVAT.setText(String.valueOf(hoaDon.getThueVAT()));
-        lblTongTien.setText(String.valueOf(hoaDon.getTongTien()));
+        lblThanhTien.setText(String.valueOf(hoaDon.getTienChuaVAT()) + " đ");
+        lblThueVAT.setText(String.valueOf(hoaDon.getThueVAT()) + " đ");
+        lblTongTien.setText(String.valueOf(hoaDon.getTongTien()) + " đ");
         
         
         btnXacNhan.addActionListener(new ActionListener() {
