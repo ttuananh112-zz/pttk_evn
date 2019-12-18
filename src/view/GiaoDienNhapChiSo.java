@@ -84,6 +84,18 @@ public class GiaoDienNhapChiSo extends javax.swing.JFrame {
             return;
         }
         
+        if(tfMaDongHo.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Mã đồng hồ không được để trống", 
+                "Cảnh báo", JOptionPane.PLAIN_MESSAGE);
+            return;
+        }
+        
+        if(tfChiSoDongHo.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Chỉ số đồng hồ không được để trống", 
+                "Cảnh báo", JOptionPane.PLAIN_MESSAGE);
+            return;
+        }
+        
         //check maDongHo
         try {
             maDongHo = Integer.valueOf(tfMaDongHo.getText());
@@ -128,7 +140,8 @@ public class GiaoDienNhapChiSo extends javax.swing.JFrame {
 
         // new value must be bigger than old value
         if(dongHo_chiSoHienTai >= chiSoMoi){
-            JOptionPane.showMessageDialog(null, "Chỉ số mới phải lớn hơn chỉ số cũ", 
+            JOptionPane.showMessageDialog(null, "Chỉ số mới phải lớn hơn chỉ số cũ."
+                    + "\nChỉ số cũ là "+dongHo_chiSoHienTai, 
                     "Cảnh báo", JOptionPane.PLAIN_MESSAGE);
             return;
         }
