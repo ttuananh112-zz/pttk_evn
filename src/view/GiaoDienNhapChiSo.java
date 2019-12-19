@@ -145,6 +145,14 @@ public class GiaoDienNhapChiSo extends javax.swing.JFrame {
                     "Cảnh báo", JOptionPane.PLAIN_MESSAGE);
             return;
         }
+        
+        // DongHo must be assigned to one HoDungDien
+        hoDungDien = hoDungDienDAO.getHoDungDien(dongHo);
+            if(hoDungDien == null){
+                JOptionPane.showMessageDialog(null, "Đồng hồ chưa được đăng ký", 
+                    "Cảnh báo", JOptionPane.PLAIN_MESSAGE);
+            return;
+            }
 
         // add new transaction for tblThongTinDongHo
         boolean is_thongTinDongHo_capNhatChiSo_success = 
@@ -157,7 +165,6 @@ public class GiaoDienNhapChiSo extends javax.swing.JFrame {
         if(is_dongHo_updateChiSoHienTai_success && 
                 is_thongTinDongHo_capNhatChiSo_success){
 
-            hoDungDien = hoDungDienDAO.getHoDungDien(dongHo);
             thongTinDongHo = thongTinDongHoDAO.getLastThongTinDongHo();
 
             // insert into tblHoaDon and get object hoaDon
